@@ -8,7 +8,10 @@ import { FadeIn } from '@/components/FadeIn'
 import { Offices } from '@/components/Offices'
 import { PageIntro } from '@/components/PageIntro'
 import { SocialMedia } from '@/components/SocialMedia'
-
+async function sendForm(formData) {
+  
+  
+}
 function TextInput({ label, ...props }) {
   let id = useId()
 
@@ -47,7 +50,7 @@ function RadioInput({ label, ...props }) {
 function ContactForm() {
   return (
     <FadeIn className="lg:order-last">
-      <form>
+      <form action={sendForm}>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Work inquiries
         </h2>

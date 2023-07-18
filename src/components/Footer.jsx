@@ -9,7 +9,7 @@ const navigation = [
   {
     title: 'Work',
     links: [
-      { title: 'FamilyFund', href: '/work/family-fund' },
+      { title: 'Shopify', href: '/work/shopify' },
       { title: 'Unseal', href: '/work/unseal' },
       { title: 'Phobia', href: '/work/phobia' },
       {
@@ -125,7 +125,7 @@ export function Footer() {
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            © TecPlus, LLC. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
