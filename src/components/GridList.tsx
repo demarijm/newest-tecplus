@@ -2,8 +2,12 @@ import clsx from 'clsx'
 
 import { Border } from '@/components/Border'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
+import React from 'react'
 
-export function GridList({ className, children }) {
+export function GridList({ className, children }: {
+  className?: string
+  children: React.ReactNode
+}) {
   return (
     <FadeInStagger>
       <ul
@@ -19,7 +23,12 @@ export function GridList({ className, children }) {
   )
 }
 
-export function GridListItem({ title, children, className, invert = false }) {
+export function GridListItem({ title, children, className, invert = false }: {
+  title: string
+  children: React.ReactNode
+  className?: string
+  invert?: boolean
+}) {
   return (
     <li
       className={clsx(

@@ -22,6 +22,7 @@ import imageLeslieAlexander from '@/images/team/leslie-alexander.jpeg'
 import imageMichaelFoster from '@/images/team/michael-foster.jpeg'
 import imageWhitneyFrancis from '@/images/team/whitney-francis.jpeg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
+import React from 'react'
 
 function Culture() {
   return (
@@ -45,7 +46,7 @@ function Culture() {
             We don’t care when our team works just as long as they are working
             every waking second.
           </GridListItem>
-          <GridListItem title="Compassion" invert>
+          <GridListItem  title="Compassion" invert>
             You never know what someone is going through at home and we make
             sure to never find out.
           </GridListItem>
