@@ -4,7 +4,7 @@ export function Border({
   className,
   position = 'top',
   invert = false,
-  as: Component = 'div',
+  as: Component = 'div' as string,
   ...props
 }) {
   return (

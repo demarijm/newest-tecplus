@@ -7,6 +7,41 @@ import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
   {
+    title: 'Company',
+    links: [
+      { title: 'About', href: '/about' },
+      { title: 'Process', href: '/process' },
+      { title: 'Blog', href: '/blog' },
+      { title: 'Contact us', href: '/contact' },
+    ],
+  },
+ 
+  {
+    title: 'Services',
+    links: [
+      { title: 'Product Development', href: '/services/product-development' },
+      { title: 'Mobile Devlopment', href: '/services/mobile-development' },
+      { title: 'Web Devleopment', href: '/blog' },
+      { title: 'Automation', href: '/blog' },
+      { title: 'Startup & MVP Solutions', href: '/contact' },
+      { title: 'Staffing', href: '/contact' },
+      { title: 'IT Consulting', href: '/contact' },
+      { title: 'Cybersecurity Consulting', href: '/contact' },
+      { title: 'UX/UI Design', href: '/contact' },
+    ],
+  },
+
+  
+  {
+    title: 'Industries',
+    links: [
+      { title: 'eCommerce & Retail', href: '/about' },
+      { title: 'Logistics & Transportation', href: '/process' },
+      { title: 'Commercial Roofing', href: '/blog' },
+      { title: 'Commercial Construction', href: '/contact' },
+    ],
+  },
+  {
     title: 'Work',
     links: [
       { title: 'Shopify', href: '/work/shopify' },
@@ -23,35 +58,33 @@ const navigation = [
     ],
   },
   {
-    title: 'Company',
+    title: 'Contact',
     links: [
-      { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
-      { title: 'Contact us', href: '/contact' },
+      { title: 'info@tecplus.io', href: '/about' },
+      { title: 'Logistics & Transportation', href: '/process' },
+      { title: 'Commercial Roofing', href: '/blog' },
+      { title: 'Commercial Construction', href: '/contact' },
     ],
   },
-  {
-    title: 'Connect',
-    links: socialMediaProfiles,
-  },
+  
+ 
 ]
 
 function Navigation() {
   return (
     <nav>
-      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
+      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-5">
         {navigation.map((section) => (
-          <li key={section.title}>
+          <li key={section.title} className=' w-full'>
             <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
               {section.title}
             </div>
-            <ul role="list" className="mt-4 text-sm text-neutral-700">
+            <ul role="list" className="mt-4  text-sm text-neutral-700">
               {section.links.map((link) => (
-                <li key={link.title} className="mt-4">
+                <li key={Math.random()} className="mt-4 ">
                   <Link
                     href={link.href}
-                    className="transition hover:text-neutral-950"
+                    className="transition  hover:text-neutral-950"
                   >
                     {link.title}
                   </Link>
@@ -114,8 +147,11 @@ export function Footer() {
   return (
     <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
       <FadeIn>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
+          <div className='col-span-3'>
+
           <Navigation />
+          </div>
           <div className="flex lg:justify-end">
             <NewsletterForm />
           </div>

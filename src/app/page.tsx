@@ -175,9 +175,7 @@ export default async function Home() {
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Developer studio based in Michigan.
-          </h1>
+          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">Custom Software Development & Managed IT</h1>
           <p className="mt-6 text-xl text-neutral-600">
             We are developer astudio working at the intersection of design and
             technology We bring a new level experience in software design. Combining new technologies and mature practice to achieve enterprise ready results in
