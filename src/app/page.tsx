@@ -21,13 +21,13 @@ import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
 const clients = [
-  ['Livegistics', logoPhobiaLight],
   ['Shopify', logoFamilyFund],
   ['GAP', logoUnseal],
   ['Balenciaga', logoMailSmirk],
   ['Pawn Stars', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
+  ['University Of Michigan', logoGreenLife],
+  ['Livegistics', logoPhobiaLight],
+  ['Oakland University', logoBrightPath],
   ['North Adventures', logoNorthAdventures],
 ]
 
@@ -165,7 +165,7 @@ function Services() {
 
 export const metadata = {
   description:
-    'We are developer studio working at the intersection of design and technology.',
+    'Tecplus is a full-service software development company of engineers, designers, and developers. Mobile app development and custom software solutions in the United States',
 }
 
 export default async function Home() {
@@ -177,9 +177,7 @@ export default async function Home() {
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">Custom Software Development & Managed IT</h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are developer astudio working at the intersection of design and
-            technology We bring a new level experience in software design. Combining new technologies and mature practice to achieve enterprise ready results in
-						a fraction of the time. 
+          Since 2018, TecPlus has been at the forefront of digital innovation, creating tailored digital solutions for professionals in various industries. Our commitment, passion, and personalized approach have defined our journey thus far. We bring a new level experience in software design. Combining new technologies and mature practice to achieve enterprise ready results in a fraction of the time.
           </p>
         </FadeIn>
       </Container>
