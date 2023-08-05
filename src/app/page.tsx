@@ -64,14 +64,10 @@ function CaseStudies({ caseStudies }) {
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="Harnessing technology for conversions"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
-          We believe technology is the answer to the world&apos;s greatest
-          challenges. It&apos;s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
-        </p>
+        <p>We're not just developers; we're your strategic partners in growth. Our team combines deep technical knowledge with a passion for solving real-world business challenges. Our expertise allows us to build web solutions that are robust, scalable, and custom-made for your business needs</p>
       </SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -137,25 +133,22 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            <ListItem title="Startups, Supercharged">
+            Cass&York drives innovation by providing cutting-edge product solutions. Partner with us to bring your disruptive ideas to life and accelerate your growth with custom web & cloud applications
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="E-commmerce, Elevated">
+              We can can help build a robust API for your application. Whether it's a custom API or you need to integrate with a third party API.
             </ListItem>
-            <ListItem title="E-commerce">
+            <ListItem title="Legacy Systems, Reimagined">
+              We are at the forefront of modern e-commerce development. We help online retailers drive sales and engage customers through seamless digital experiences
+            </ListItem>
+            <ListItem title="On Site Development">
               We are at the forefront of modern e-commerce development. Which
               mainly means adding your logo to the Shopify store template we’ve
               used for the past six years.
             </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
-            </ListItem>
+          
+         
           </List>
         </div>
       </Container>
@@ -175,10 +168,8 @@ export default async function Home() {
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">Custom Software Development & Managed IT</h1>
-          <p className="mt-6 text-xl text-neutral-600">
-          Since 2018, TecPlus has been at the forefront of digital innovation, creating tailored digital solutions for professionals in various industries. Our commitment, passion, and personalized approach have defined our journey thus far. We bring a new level experience in software design. Combining new technologies and mature practice to achieve enterprise ready results in a fraction of the time.
-          </p>
+          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">Accelerating Business growth with the web</h1>
+          <p className="mt-6 text-xl text-neutral-600">We don’t just develop, we co-create. Our team, combining deep technical know-how with a passion for problem-solving, stands ready to partner with you. Our experience runs the gamut—from high-fashion powerhouses to agile fintech startups, and from waste management pioneers to commercial roofing experts. We understand your unique challenges and are equipped to elevate your digital presence.</p>
         </FadeIn>
       </Container>
 
