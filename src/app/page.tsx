@@ -142,12 +142,7 @@ function Services() {
             <ListItem title="Legacy Systems, Reimagined">
               We are at the forefront of modern e-commerce development. We help online retailers drive sales and engage customers through seamless digital experiences
             </ListItem>
-            <ListItem title="On Site Development">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
-            </ListItem>
-          
+         
          
           </List>
         </div>

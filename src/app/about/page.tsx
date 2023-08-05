@@ -28,8 +28,8 @@ function Culture() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
-        eyebrow="Our culture"
-        title="Balance your passion with your passion for life."
+        eyebrow="Our approach"
+        title="A collaborative partner in your journey"
         invert
       >
         <p>
@@ -38,18 +38,9 @@ function Culture() {
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
-          </GridListItem>
-          <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
-          </GridListItem>
-          <GridListItem  title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
-          </GridListItem>
+          <GridListItem title="Focus on Quality" invert>We strive for excellence in everything we do, delivering high-quality solutions that meet and exceed the expectations of our clients.</GridListItem>
+          <GridListItem title="Continuous Improvement" invert>We are dedicated to continuously improving our solutions and processes to stay ahead of the curve and meet the evolving needs of businesses.</GridListItem>
+          <GridListItem  title="A Personal touch " invert>We believe in being open and transparent in our approach, building trust with our clients and partners through clear communication and collaboration.</GridListItem>
         </GridList>
       </Container>
     </div>
@@ -181,7 +172,7 @@ function Team() {
 export const metadata = {
   title: 'About Us',
   description:
-    'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
+    'We believe that our strength lies in our We believe in staying ahead of the curve. Our team of developers, designers, and strategists are constantly honing their skills, staying abreast of industry trends, and thinking outside the box to deliver the best for our clients.collaborative approach, which puts our clients at the center of everything we do.',
 }
 
 export default async function About() {
@@ -189,23 +180,23 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
-        <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
-        </p>
+      <PageIntro eyebrow="Meet Cass&York" title="Our strength is collaboration">
+        <p>Where Innovation, Strategy, and Collaboration Drive Digital Transformation</p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
+          <p>At Cass&York, we're not just coding—we're co-creating a digital future. Our team's unique blend of technical acumen and strategic insight allows us to chart paths through the digital landscape for businesses of all shapes and sizes. From high-fashion and retail heavyweights to groundbreaking startups and specialized sectors like waste management and commercial roofing, we’ve got the versatility and experience to make a tangible impact.</p>
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+          We're more than just a service provider—we're a collaborative partner in your digital journey. Our method is grounded in understanding your unique challenges, needs, and objectives. From this foundation, we craft web experiences that aren't just functional or aesthetically pleasing—they're strategic, innovative, and tailor-made for your business.
+<br />
+<br />
+We believe in staying ahead of the curve. Our team of developers, designers, and strategists are constantly honing their skills, staying abreast of industry trends, and thinking outside the box to deliver the best for our clients.
           </p>
+        </div>
+        <div className="mt-10 max-w-2xl space-y-6 text-base">
+          <p>Our diverse portfolio tells the story of our impact. Whether it's giving a digital edge to a retail giant, breathing life into a fintech startup, transforming the online presence of a fashion brand, or crafting precise software for waste management and commercial roofing companies—our work makes a difference.
+
+</p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+          But don’t just take our word for it. Hear from our clients:"
           </p>
         </div>
       </PageIntro>
