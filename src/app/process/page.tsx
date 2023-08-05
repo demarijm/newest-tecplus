@@ -156,40 +156,30 @@ function Values() {
         eyebrow="Our values"
         title="Balancing reliability and innovation"
       >
-        <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
-        </p>
+        <p>At Cass&York, our approach merges technical expertise with deep industry knowledge, consistently aligning with the strategic visions of our elite clientele.</p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+          <GridListItem title="User-centricity">
+         We believe that by putting the user at the center of everything we do, we can create solutions that drive engagement, retention, and satisfaction for businesses.
+
+         
           </GridListItem>
-          <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+          <GridListItem title="Innovation">
+          We are committed to pushing boundaries and challenging the status quo to bring about positive change in the industry through innovative design and digital transformation.
           </GridListItem>
-          <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+          <GridListItem title="Transparency">
+          We believe in being open and transparent in our approach, building trust with our clients and partners through clear communication and collaboration.
           </GridListItem>
-          <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+          <GridListItem title="Continuous Improvement">
+          We are dedicated to continuously improving our solutions and processes to stay ahead of the curve and meet the evolving needs of businesses.
           </GridListItem>
-          <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+          <GridListItem title="Quality">
+          We strive for excellence in everything we do, delivering high-quality solutions that meet and exceed the expectations of our clients.
           </GridListItem>
-          <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+          <GridListItem title="Sustainability">
+          We are committed to creating solutions that are not only effective but also sustainable, taking into account the long-term impact on the environment and society.
           </GridListItem>
         </GridList>
       </Container>
