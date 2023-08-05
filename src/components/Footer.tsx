@@ -25,9 +25,6 @@ const navigation = [
       { title: 'Automation', href: '/blog' },
       { title: 'Startup & MVP Solutions', href: '/contact' },
       { title: 'Staffing', href: '/contact' },
-      { title: 'IT Consulting', href: '/contact' },
-      { title: 'Cybersecurity Consulting', href: '/contact' },
-      { title: 'UX/UI Design', href: '/contact' },
     ],
   },
 
@@ -60,7 +57,6 @@ const navigation = [
   {
     title: 'Contact',
     links: [
-      { title: 'demari@cassyork.com', href: '/about' },
       { title: 'Logistics & Transportation', href: '/process' },
       { title: 'Commercial Roofing', href: '/blog' },
       { title: 'Commercial Construction', href: '/contact' },
