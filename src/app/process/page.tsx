@@ -45,28 +45,21 @@ function Section({ title, image, children }) {
 
 function Discover() {
   return (
-    <Section title="Discover" image={{ src: imageWhiteboard }}>
+    <Section title="Discovery" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
+
         <p>
-          We work closely with our clients to understand their{' '}
-          <strong className="font-semibold text-neutral-950">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+      We begin by gaining a comprehensive  <strong className="font-semibold text-neutral-950">understanding</strong> of your business, objectives, and challenges. This phase involves in-depth discussions, industry research, and an audit of your existing systems and processes.
+        
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{' '}
-          <strong className="font-semibold text-neutral-950">business</strong>{' '}
-          accounts — handing that information over to our forensic accounting
-          team.
-        </p>
-        <p>
-          Once the full audit is complete, we report back with a comprehensive{' '}
-          <strong className="font-semibold text-neutral-950">plan</strong> and,
-          more importantly, a budget.
-        </p>
+We offer  <strong className="font-semibold text-neutral-950">low cost</strong> Proof of Concepts (POCs) to demonstrate the value of our solutions. This is a great way to get buy-in from stakeholders and to test the feasibility of our solutions.
+</p>
+        <p>Order one <span className='underline'>
+          here
+
+        </span>
+</p>
       </div>
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
@@ -75,10 +68,10 @@ function Discover() {
       <TagList className="mt-4">
         <TagListItem>In-depth questionnaires</TagListItem>
         <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
+        <TagListItem>Current System evaluation</TagListItem>
         <TagListItem>Employee surveys</TagListItem>
         <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
+        <TagListItem>Competitor Analysis</TagListItem>
       </TagList>
     </Section>
   )
@@ -122,7 +115,7 @@ function Build() {
 
 function Deliver() {
   return (
-    <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Support/Optimization" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           About halfway through the Build phase, we push each project out by 6
@@ -238,11 +231,9 @@ export const metadata = {
 export default function Process() {
   return (
     <>
-      <PageIntro eyebrow="Our process" title="How we work">
+      <PageIntro eyebrow="Transforming Visions into Reality, One Step at a Time" title="Our process is a journey of collaboration, innovation, and results">
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+        Every successful project at [Your Company's Name] is rooted in our methodical and collaborative process. While we tailor our approach to each client's unique needs, our process generally encompasses the following stages:
         </p>
       </PageIntro>
 

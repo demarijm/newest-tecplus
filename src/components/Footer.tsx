@@ -60,7 +60,7 @@ const navigation = [
   {
     title: 'Contact',
     links: [
-      { title: 'info@tecplus.io', href: '/about' },
+      { title: 'demari@cassyork.com', href: '/about' },
       { title: 'Logistics & Transportation', href: '/process' },
       { title: 'Commercial Roofing', href: '/blog' },
       { title: 'Commercial Construction', href: '/contact' },
@@ -161,7 +161,7 @@ export function Footer() {
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © TecPlus, LLC. {new Date().getFullYear()}
+            © Cass&York, LLC. {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>

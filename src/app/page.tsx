@@ -153,7 +153,7 @@ function Services() {
 
 export const metadata = {
   description:
-    'Tecplus is a full-service software development company of engineers, designers, and developers. Mobile app development and custom software solutions in the United States',
+    'Cass&York is a full-service software development company of engineers, designers, and developers. Mobile app development and custom software solutions in the United States',
 }
 
 export default async function Home() {
