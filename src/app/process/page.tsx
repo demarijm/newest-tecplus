@@ -49,17 +49,17 @@ function Discover() {
       <div className="space-y-6 text-base text-neutral-600">
 
         <p>
-      We begin by gaining a comprehensive  <strong className="font-semibold text-neutral-950">understanding</strong> of your business, objectives, and challenges. This phase involves in-depth discussions, industry research, and an audit of your existing systems and processes.
-        
+          We begin by gaining a comprehensive  <strong className="font-semibold text-neutral-950">understanding</strong> of your business, objectives, and challenges. This phase involves in-depth discussions, industry research, and an audit of your existing systems and processes.
+
         </p>
         <p>
-We offer  <strong className="font-semibold text-neutral-950">low cost</strong> Proof of Concepts (POCs) to demonstrate the value of our solutions. This is a great way to get buy-in from stakeholders and to test the feasibility of our solutions.
-</p>
+          We offer  <strong className="font-semibold text-neutral-950">low cost</strong> Proof of Concepts (POCs) to demonstrate the value of our solutions. This is a great way to get buy-in from stakeholders and to test the feasibility of our solutions.
+        </p>
         <p>Order one <span className='underline'>
           here
 
         </span>
-</p>
+        </p>
       </div>
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
@@ -82,24 +82,22 @@ function Build() {
     <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
+          In the build phase, your vision takes shape as we transform ideas into robust, scalable, and innovative digital solutions.
         </p>
         <p>
-          Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
-        </p>
-        <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
-        </p>
+          We prioritize a user-centric approach, focusing on creating a seamless and engaging user experience that aligns with your brand identity.
+          </p> 
+          <p>
+
+            With design blueprints in hand, our developers get to work. They write clean, efficient code using the latest technologies and frameworks that meet your project's specific needs. Throughout this phase, we follow an Agile development methodology. This allows for flexibility and adaptability, with regular sprints and checkpoints to ensure the project is on track and aligned with your expectations.
+          </p>
+          <p>
+            Whether it's a mobile app, a custom software solution, or an e-commerce platform, we ensure that the final product is robust, scalable, and secure, ready to drive your business growth and set you apart from the competition.
+          </p>
+          <p>
+            We maintain constant communication throughout this phase, keeping you informed and involved. Your feedback is essential as we refine and perfect the solution, ensuring the final product not only meets but exceeds your expectations.
+
+          </p>
       </div>
 
       <Blockquote
@@ -115,53 +113,30 @@ function Build() {
 
 function Deliver() {
   return (
-    <Section title="Support/Optimization" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Ensuring Continuous Performance and Growth" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{' '}
-          <strong className="font-semibold text-neutral-950">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
+        Our support and optimization services provide ongoing enhancements to keep your digital solution running optimally and adapting to your evolving needs.
         </p>
         <p>
-          Despite largely using pre-built components, most of the{' '}
-          <strong className="font-semibold text-neutral-950">progress</strong>{' '}
-          on each project takes place in the final 24 hours. The development
-          time allocated to each client is actually spent making augmented
-          reality demos that go viral on Twitter.
+        our commitment to your success doesn't end at deployment. We believe in forming long-term partnerships, and that's where our support and optimization services come into play.  </p>
+   
+<p>
+Our dedicated support team is always ready to assist you with any technical issues or queries. We offer various levels of support, from routine system checks and maintenance to on-demand troubleshooting.  </p>
+<p>
+Remember, digital landscapes and customer expectations change rapidly. With our ongoing support and optimization, your solution remains current, relevant, and aligned with your business goals. We're here for you, today and tomorrow, helping your business grow and thrive in the digital world.
+        
         </p>
-        <p>
-          We ensure that the main pages of the site are{' '}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{' '}
-          retainer.
-        </p>
+     
       </div>
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
         Included in this phase
       </h3>
       <List className="mt-8">
-        <ListItem title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
-        </ListItem>
-        <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
-        </ListItem>
-        <ListItem title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
-        </ListItem>
+        <ListItem title="Post Launch Monitoring">Regularly tracking and analyzing system performance, user interactions, and feedback to identify potential issues and areas for improvement.</ListItem>
+        <ListItem title="Technical Support">Providing ongoing assistance with any technical issues or questions that may arise, from routine system checks and bug fixes to troubleshooting more complex issues.</ListItem>
+        <ListItem title="Continuous Optimization">Making data-driven updates and enhancements to improve user experience, add new features, and ensure the solution stays current with changing market trends and business goals.</ListItem>
       </List>
     </Section>
   )
@@ -233,7 +208,7 @@ export default function Process() {
     <>
       <PageIntro eyebrow="Transforming Visions into Reality, One Step at a Time" title="Our process is a journey of collaboration, innovation, and results">
         <p>
-        Every successful project at [Your Company's Name] is rooted in our methodical and collaborative process. While we tailor our approach to each client's unique needs, our process generally encompasses the following stages:
+          Every successful project at Cass&York is rooted in our methodical and collaborative process. While we tailor our approach to each client's unique needs, our process generally encompasses the following stages:
         </p>
       </PageIntro>
 
