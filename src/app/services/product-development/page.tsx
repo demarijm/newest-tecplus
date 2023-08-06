@@ -9,43 +9,43 @@ import React from 'react'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
+import { ContactSection } from '@/components/ContactSection'
+import { Values } from '../layout'
 
 export default function page() {
   return (
     <>
-    <PageIntro eyebrow="Turning Porduct visions into reality " title="Our process is a journey of collaboration, innovation, and results">
-    <p>
-    At Cass&York, we know the digital landscape like the back of our hand. We also understand that every business journey is as unique as a fingerprint. Whether you're a fledgling start-up or an industry leader, we offer versatile product help and development services designed to bring your digital aspirations to life.
-    </p>
-  </PageIntro>
-  <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
+      <PageIntro eyebrow="Product Development" title="Product is a journey of collaboration, innovation, and results">
+        <p>
+          At Cass&York, we know the digital landscape like the back of our hand. We also understand that every business journey is as unique as a fingerprint. Whether you're a fledgling start-up or an industry leader, we offer versatile product help and development services designed to bring your digital aspirations to life.
+        </p>
+      </PageIntro>
+      <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Discover />
         <Build />
         <Deliver />
       </div>
+
+      <Values />
+
+<ContactSection call="Ready to start? Click below"/>
     </>
 
   )
 }
 
-
 function Discover() {
   return (
     <Section title="The Nuts and Bolts of Product Development" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
-
         <p>
-          We begin by gaining a comprehensive  <strong className="font-semibold text-neutral-950">understanding</strong> of your business, objectives, and challenges. This phase involves in-depth discussions, industry research, and an audit of your existing systems and processes.
 
+          Our team of industry-leading developers, designers, and strategists are eager to transform your concept into a robust digital product. We blend our technical know-how with a deep understanding of your business requirements to create solutions that work as hard as you do.
         </p>
         <p>
-          We offer  <strong className="font-semibold text-neutral-950">low cost</strong> Proof of Concepts (POCs) to demonstrate the value of our solutions. This is a great way to get buy-in from stakeholders and to test the feasibility of our solutions.
+          From bespoke software solutions to interactive mobile applications and high-performance e-commerce platforms, we create products that pack a punch. What's more, we ensure that these solutions not only meet your unique specifications but also deliver an engaging, user-friendly experience to your audience.
         </p>
-        <p>Order one <span className='underline'>
-          here
 
-        </span>
-        </p>
       </div>
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
@@ -65,32 +65,28 @@ function Discover() {
 
 function Build() {
   return (
-    <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
+    <Section title="Round-the-clock help" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          In the build phase, your vision takes shape as we transform ideas into robust, scalable, and innovative digital solutions.
+          In the digital realm, it's not enough to simply create a product and set it loose in the world. Continuous support, maintenance, and fine-tuning are essential to ensure your product stands strong in an ever-evolving landscape.
         </p>
         <p>
-          We prioritize a user-centric approach, focusing on creating a seamless and engaging user experience that aligns with your brand identity.
-          </p> 
-          <p>
 
-            With design blueprints in hand, our developers get to work. They write clean, efficient code using the latest technologies and frameworks that meet your project's specific needs. Throughout this phase, we follow an Agile development methodology. This allows for flexibility and adaptability, with regular sprints and checkpoints to ensure the project is on track and aligned with your expectations.
-          </p>
-          <p>
-            Whether it's a mobile app, a custom software solution, or an e-commerce platform, we ensure that the final product is robust, scalable, and secure, ready to drive your business growth and set you apart from the competition.
-          </p>
-          <p>
-            We maintain constant communication throughout this phase, keeping you informed and involved. Your feedback is essential as we refine and perfect the solution, ensuring the final product not only meets but exceeds your expectations.
+          Our product help services are comprehensive, reliable, and – most importantly – always available. Whether you need swift issue resolution, routine maintenance, or updates to stay ahead of the curve, we've got your back. We're here to keep your digital solutions performing optimally and aligned with your business goals.
+        </p>
 
-          </p>
+        <p>
+          Plus, our product help goes beyond issue resolution – it's about empowering your team. We provide the resources and training needed to leverage your digital solutions effectively. We're not just handing over a product; we're equipping you to wield it with confidence.
+        </p>
+
+
       </div>
 
       <Blockquote
         author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
         className="mt-12"
       >
-        Studio were so regular with their progress updates we almost began to
+        Cass&York were so regular with their progress updates we almost began to
         think they were automated!
       </Blockquote>
     </Section>
@@ -99,21 +95,17 @@ function Build() {
 
 function Deliver() {
   return (
-    <Section title="Ensuring Continuous Performance and Growth" image={{ src: imageMeeting, shape: 2 }}>
+    <Section title="Tailor-Made for your business" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-        Our support and optimization services provide ongoing enhancements to keep your digital solution running optimally and adapting to your evolving needs.
+          At Cass&York, we know there's no one-size-fits-all solution. That's why we are committed to understanding your specific vision, challenges, and requirements. This understanding informs our tailor-made approach, enabling us to align our services with your unique goals and strategies.
         </p>
         <p>
-        our commitment to your success doesn't end at deployment. We believe in forming long-term partnerships, and that's where our support and optimization services come into play.  </p>
-   
-<p>
-Our dedicated support team is always ready to assist you with any technical issues or queries. We offer various levels of support, from routine system checks and maintenance to on-demand troubleshooting.  </p>
-<p>
-Remember, digital landscapes and customer expectations change rapidly. With our ongoing support and optimization, your solution remains current, relevant, and aligned with your business goals. We're here for you, today and tomorrow, helping your business grow and thrive in the digital world.
-        
+
+          Whether you're planning to launch a brand-new digital product, or looking to enhance an existing one, we're here to help you every step of the way. Our mission? To deliver products that don't just meet your expectations – they leap over them, leading to significant growth and success for your business.
         </p>
-     
+
+
       </div>
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
@@ -144,7 +136,6 @@ function Section({ title, image, children }) {
         </div>
         <div className="mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first">
           <FadeIn>
-        
             <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
               {title}
             </h2>
