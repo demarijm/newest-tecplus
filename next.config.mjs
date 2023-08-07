@@ -16,6 +16,9 @@ const nextConfig = {
   pageExtensions: ['jsx', 'mdx', 'tsx'],
   experimental: {
     serverActions: true,
+  },
+  images: {
+    domains: ['cdn.sanity.io'],
   }
 }
 

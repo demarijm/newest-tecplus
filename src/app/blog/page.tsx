@@ -9,6 +9,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { formatDate } from '@/lib/formatDate'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
+import { sanity } from '@/lib/sanity'
 
 export const metadata = {
   title: 'Blog',
@@ -16,8 +17,22 @@ export const metadata = {
     'Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles.',
 }
 
+export async function getPosts() {
+  const posts = await sanity.fetch(`*[_type == "post"] {
+    ...,
+    'authorName': author->name,
+    'mainImageUrl': mainImage.asset->url,
+    'categoryList': categories[]->title,
+  }`)
+  console.log(posts)
+  return posts
+}
+  
+
+
+
 export default async function Blog() {
-  let articles = await loadMDXMetadata('blog')
+  let articles = await getPosts()
 
   return (
     <>
@@ -33,17 +48,18 @@ export default async function Blog() {
           {articles.map((article) => (
             <FadeIn key={article.href}>
               <article>
+
                 <Border className="pt-16">
                   <div className="relative lg:-mx-4 lg:flex lg:justify-end">
                     <div className="pt-10 lg:w-2/3 lg:flex-none lg:px-4 lg:pt-0">
                       <h2 className="font-display text-2xl font-semibold text-neutral-950">
-                        <Link href={article.href}>{article.title}</Link>
+                        <Link href={article.slug.current}>{article.title}</Link>
                       </h2>
                       <dl className="lg:absolute lg:left-0 lg:top-0 lg:w-1/3 lg:px-4">
                         <dt className="sr-only">Published</dt>
                         <dd className="absolute left-0 top-0 text-sm text-neutral-950 lg:static">
-                          <time dateTime={article.date}>
-                            {formatDate(article.date)}
+                          <time dateTime={article.publishedAt}>
+                            {formatDate(article.publishedAt)}
                           </time>
                         </dd>
                         <dt className="sr-only">Author</dt>
@@ -51,8 +67,10 @@ export default async function Blog() {
                           <div className="flex-none overflow-hidden rounded-xl bg-neutral-100">
                             <Image
                               alt=""
-                              {...article.author.image}
-                              className="h-12 w-12 object-cover grayscale"
+                              width={500}
+                              height={500}
+                              src={article.mainImageUrl}
+                              className="h-48 w-72 object-cover grayscale"
                             />
                           </div>
                           <div className="text-sm text-neutral-950">
@@ -63,7 +81,7 @@ export default async function Blog() {
                           </div>
                         </dd>
                       </dl>
-                      <p className="mt-6 max-w-2xl text-base text-neutral-600">
+                      <p className="mt-6 line-clamp-2 max-w-2xl text-base text-neutral-600">
                         {article.description}
                       </p>
                       <Button
