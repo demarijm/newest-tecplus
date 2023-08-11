@@ -23,22 +23,22 @@ import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 const clients = [
   ['Shopify', logoFamilyFund],
   ['GAP', logoUnseal],
-  ['Balenciaga', logoMailSmirk],
-  ['Pawn Stars', logoHomeWork],
-  ['University Of Michigan', logoGreenLife],
-  ['Livegistics', logoPhobiaLight],
-  ['Oakland University', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  // ['Balenciaga', logoMailSmirk],
+  // ['Pawn Stars', logoHomeWork],
+  // ['University Of Michigan', logoGreenLife],
+  // ['Livegistics', logoPhobiaLight],
+  // ['Oakland University', logoBrightPath],
+  // ['North Adventures', logoNorthAdventures],
 ]
 
 function Clients() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mt-24  bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       {/* @ts-ignore */}
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We&apos;ve worked with hundreds of amazing people
+            Clients who trust us to deliver
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -50,7 +50,7 @@ function Clients() {
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image width={100} height={100} src={logo} alt={client} unoptimized />
                 </FadeIn>
               </li>
             ))}
@@ -80,6 +80,7 @@ function CaseStudies({ caseStudies }) {
                   <Link href={caseStudy.href}>
                     <span className="absolute inset-0 rounded-3xl" />
                     <Image
+                    width={100} height={100}
                       src={caseStudy.logo}
                       alt={caseStudy.client}
                       className="h-16 w-16"
@@ -165,8 +166,9 @@ export default async function Home() {
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">Accelerating Business growth with the web</h1>
-          <p className="mt-6 text-xl text-neutral-600">We don’t just develop, we co-create. Our team, combining deep technical know-how with a passion for problem-solving, stands ready to partner with you. Our experience runs the gamut—from high-fashion powerhouses to agile fintech startups, and from waste management pioneers to commercial roofing experts. We understand your unique challenges and are equipped to elevate your digital presence.</p>
+          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">Drive more from your Ecommerce store</h1>
+          <p className="mt-6 text-xl text-neutral-600">We help merchants dominate their competition through customer journy optimzations for B2B and B2C stores. 
+          </p>
         </FadeIn>
       </Container>
 
@@ -176,11 +178,9 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'Daniel Burwen', logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user&apos;s microphone without triggering one of
-        those annoying permission dialogs.
+        ...Versatile at both back end trouble shooting, as well as front end tasks...Highly Recommend
       </Testimonial>
 
       <Services />

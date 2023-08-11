@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -18,6 +19,7 @@ export const metadata = {
 }
 
 export async function getPosts() {
+  'use server'
   const posts = await sanity.fetch(`*[_type == "post"] {
     ...,
     'authorName': author->name,
@@ -53,13 +55,13 @@ export default async function Blog() {
                   <div className="relative lg:-mx-4 lg:flex lg:justify-end">
                     <div className="pt-10 lg:w-2/3 lg:flex-none lg:px-4 lg:pt-0">
                       <h2 className="font-display text-2xl font-semibold text-neutral-950">
-                        <Link href={article.slug.current}>{article.title}</Link>
+                        <Link href={`/blog/${article.slug.current}`}>{article.title}</Link>
                       </h2>
                       <dl className="lg:absolute lg:left-0 lg:top-0 lg:w-1/3 lg:px-4">
                         <dt className="sr-only">Published</dt>
                         <dd className="absolute left-0 top-0 text-sm text-neutral-950 lg:static">
                           <time dateTime={article.publishedAt}>
-                            {formatDate(article.publishedAt)}
+                            {article.publishedAt}
                           </time>
                         </dd>
                         <dt className="sr-only">Author</dt>
@@ -84,7 +86,6 @@ export default async function Blog() {
                       <p className="mt-6 line-clamp-2 max-w-2xl text-base text-neutral-600">
                         {article.description}
                       </p>
-                      {/* @ts-ignore */}
                       <Button
                         href={article.href}
                         aria-label={`Read more: ${article.title}`}
