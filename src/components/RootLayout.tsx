@@ -52,7 +52,7 @@ function Header({
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)
 
   return (
-    <Container>
+    <Container className="">
       <div className="flex items-center justify-between">
         <Link
           href="/"
