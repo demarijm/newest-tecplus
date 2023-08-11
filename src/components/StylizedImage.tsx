@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useId } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'

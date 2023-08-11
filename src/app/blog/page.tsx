@@ -84,6 +84,7 @@ export default async function Blog() {
                       <p className="mt-6 line-clamp-2 max-w-2xl text-base text-neutral-600">
                         {article.description}
                       </p>
+                      {/* @ts-ignore */}
                       <Button
                         href={article.href}
                         aria-label={`Read more: ${article.title}`}

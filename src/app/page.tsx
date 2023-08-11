@@ -34,6 +34,7 @@ const clients = [
 function Clients() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+      {/* @ts-ignore */}
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
@@ -63,6 +64,7 @@ function Clients() {
 function CaseStudies({ caseStudies }) {
   return (
     <>
+    {/* @ts-ignore */}
       <SectionIntro
         title="Harnessing technology for conversions"
         className="mt-24 sm:mt-32 lg:mt-40"

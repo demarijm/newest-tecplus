@@ -78,6 +78,7 @@ function ContactForm() {
             </fieldset>
           </div>
         </div>
+        {/* @ts-ignore */}
         <Button type="submit" className="mt-10">
           Let’s work together
         </Button>

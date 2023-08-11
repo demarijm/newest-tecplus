@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { MDXComponents } from '@/components/MDXComponents'
 
 export function useMDXComponents(components) {

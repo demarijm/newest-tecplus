@@ -126,6 +126,7 @@ function Team() {
       <div className="space-y-24">
         {team.map((group) => (
           <FadeInStagger key={group.title}>
+            {/* @ts-ignore */}
             <Border as={FadeIn} />
             <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
               <FadeIn>

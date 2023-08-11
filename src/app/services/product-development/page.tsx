@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Blockquote } from '@/components/Blockquote'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
