@@ -1,12 +1,13 @@
 import { RootLayout } from '@/components/RootLayout'
 import { Analytics } from '@vercel/analytics/react';
 
+
 import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - Studio',
-    default: 'Studio - Developer studio based in Michigan',
+    template: '%s - Cass&York',
+    default: 'Cass&York - Transforming Merchants Success',
   },
 }
 

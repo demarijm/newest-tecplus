@@ -163,7 +163,6 @@ function CTA() {
               <div>
                 <label htmlFor="email" className="block text-lgfont-semibold leading-6 text-gray-900">
                 Where should we send your Free Tune Up File?
-
                 </label>
                 <div className="mt-2.5">
                   <input
