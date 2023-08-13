@@ -170,7 +170,7 @@ export default async function Home() {
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">Drive more from your Ecommerce store</h1>
           <p className="mt-6 text-xl text-neutral-600">We help merchants dominate their competition through customer journy optimzations for B2B and B2C stores. 
           </p>
-          <Button>
+          <Button href="/free">
             Request my free conversion review
           </Button>
         </FadeIn>
