@@ -19,6 +19,7 @@ import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
+import { Button } from '@/components/Button'
 
 const clients = [
   ['Shopify', logoFamilyFund],
@@ -169,6 +170,9 @@ export default async function Home() {
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">Drive more from your Ecommerce store</h1>
           <p className="mt-6 text-xl text-neutral-600">We help merchants dominate their competition through customer journy optimzations for B2B and B2C stores. 
           </p>
+          <Button>
+            Request my free conversion review
+          </Button>
         </FadeIn>
       </Container>
 
