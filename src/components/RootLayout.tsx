@@ -54,14 +54,12 @@ function Header({
   return (
     <Container className="">
       <div className="sm:flex sm:items-center w-full grid grid-cols-2 justify-between">
-
         <Link
           href="/"
           aria-label="Home"
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          
           <Logomark
             className="h-8 sm:hidden"
             invert={invert}

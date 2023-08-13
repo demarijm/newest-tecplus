@@ -20,8 +20,8 @@ const navigation = [
     title: 'Services',
     links: [
       { title: 'Product Development', href: '/services/product-development' },
-      { title: 'Mobile Devlopment', href: '/services/mobile-development' },
-      { title: 'Web Devleopment', href: '/blog' },
+      { title: 'Mobile Development', href: '/services/mobile-development' },
+      { title: 'Web Development', href: '/blog' },
       { title: 'Automation', href: '/blog' },
       { title: 'Startup & MVP Solutions', href: '/contact' },
       { title: 'Staffing', href: '/contact' },
