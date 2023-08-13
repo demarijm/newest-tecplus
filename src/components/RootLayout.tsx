@@ -53,7 +53,8 @@ function Header({
 
   return (
     <Container className="">
-      <div className="flex items-center justify-between">
+      <div className="sm:flex sm:items-center w-full grid grid-cols-2 bg-red-300 justify-between">
+
         <Link
           href="/"
           aria-label="Home"
@@ -68,13 +69,14 @@ function Header({
           />
         
           <Logo
-            className="hidden h-8 sm:block"
+            className=" h-8 sm:block"
             invert={invert}
             filled={logoHovered}
           />
         </Link>
-        <div className="flex items-center gap-x-8">
-          <Button href="/contact" invert={invert}>
+        <div className="flex items gap-x-8">
+          
+          <Button className="hidden sm:block" href="/contact" invert={invert}>
             Contact us
           </Button>
           <button
@@ -84,14 +86,14 @@ function Header({
             aria-expanded={expanded.toString()}
             aria-controls={panelId}
             className={clsx(
-              'group -m-2.5 rounded-full p-2.5 transition',
+              'group -m-2.5 bg-red-600 rounded-full p-2.5 transition',
               invert ? 'hover:bg-white/10' : 'hover:bg-neutral-950/10'
             )}
             aria-label="Toggle navigation"
           >
             <Icon
               className={clsx(
-                'h-6 w-6',
+                'h-6 w-6 bg-blue-400',
                 invert
                   ? 'fill-white group-hover:fill-neutral-200'
                   : 'fill-neutral-950 group-hover:fill-neutral-700'
