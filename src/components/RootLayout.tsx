@@ -93,7 +93,7 @@ function Header({
           >
             <Icon
               className={clsx(
-                'h-6 w-6 ',
+                'h-6 w-6 ', 
                 invert
                   ? 'fill-white group-hover:fill-neutral-200'
                   : 'fill-neutral-950 group-hover:fill-neutral-700'
