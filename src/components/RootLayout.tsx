@@ -53,7 +53,7 @@ function Header({
 
   return (
     <Container className="">
-      <div className="sm:flex sm:items-center w-full grid grid-cols-2 bg-red-300 justify-between">
+      <div className="sm:flex sm:items-center w-full grid grid-cols-2 justify-between">
 
         <Link
           href="/"
