@@ -4,6 +4,7 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
+import { handleNewsletter } from '@/app/server/actions'
 
 const navigation = [
   {
@@ -39,9 +40,9 @@ const navigation = [
     ],
   },
   {
-    title: 'Work',
+    title: 'Freebies',
     links: [
-      { title: 'Shopify', href: '/work/shopify' },
+      { title: 'Tune Up', href: '/freebies/cro' },
       { title: 'Unseal', href: '/work/unseal' },
       { title: 'Phobia', href: '/work/phobia' },
       {
@@ -57,9 +58,9 @@ const navigation = [
   {
     title: 'Contact',
     links: [
-      { title: 'Logistics & Transportation', href: '/process' },
-      { title: 'Commercial Roofing', href: '/blog' },
-      { title: 'Commercial Construction', href: '/contact' },
+      { title: 'sales@cassyork.com', href: 'mailto:sales@cassyork.com' },
+      { title: 'support@cassyork.com', href: 'mailto:support@cassyork.com' },
+      { title: '+1 (313) 403-8703', href: 'tel"13134038703' },
     ],
   },
   
@@ -107,9 +108,10 @@ function ArrowIcon(props) {
   )
 }
 
+
 function NewsletterForm() {
   return (
-    <form className="max-w-sm">
+    <form action={handleNewsletter} className="max-w-sm">
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
         Sign up for our newsletter
       </h2>
@@ -120,6 +122,7 @@ function NewsletterForm() {
       <div className="relative mt-6">
         <input
           type="email"
+          name="email"
           placeholder="Email address"
           autoComplete="email"
           aria-label="Email address"

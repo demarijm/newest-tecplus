@@ -67,7 +67,7 @@ function Header({
           />
         
           <Logo
-            className=" h-8 sm:block"
+            className=" hidden h-8 sm:block"
             invert={invert}
             filled={logoHovered}
           />
