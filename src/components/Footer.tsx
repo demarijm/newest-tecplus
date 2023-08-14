@@ -21,10 +21,10 @@ const navigation = [
     links: [
       { title: 'Product Development', href: '/services/product-development' },
       { title: 'Mobile Development', href: '/services/mobile-development' },
-      { title: 'Web Development', href: '/blog' },
-      { title: 'Automation', href: '/blog' },
-      { title: 'Startup & MVP Solutions', href: '/contact' },
-      { title: 'Staffing', href: '/contact' },
+      { title: 'Web Development', href: '/services/web-development' },
+      { title: 'Conversion Rate Optimization', href: '/services/web-development' },
+      { title: 'Automation', href: '/services/automation' },
+      { title: 'Staffing/OnSite', href: '/services/staffing' },
     ],
   },
 
