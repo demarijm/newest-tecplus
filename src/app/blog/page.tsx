@@ -1,4 +1,3 @@
-// @ts-nocheck
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -8,9 +7,8 @@ import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
-import { formatDate } from '@/lib/formatDate'
-import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 import { sanity } from '@/lib/sanity'
+import { getPosts } from '../server/posts.server'
 
 export const metadata = {
   title: 'Blog',
@@ -18,18 +16,6 @@ export const metadata = {
     'Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles.',
 }
 
-export async function getPosts() {
-  'use server'
-  const posts = await sanity.fetch(`*[_type == "post"] {
-    ...,
-    'authorName': author->name,
-    'mainImageUrl': mainImage.asset->url,
-    'categoryList': categories[]->title,
-  }`)
-  console.log(posts)
-  return posts
-}
-  
 
 
 
