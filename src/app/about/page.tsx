@@ -203,9 +203,9 @@ We believe in staying ahead of the curve. Our team of developers, designers, and
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem value="35" label="Global team members" />
+          <StatListItem value="10" label="Years in service" />
+          <StatListItem value="$25M" label="In client transactions" />
         </StatList>
       </Container>
 
