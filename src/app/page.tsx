@@ -141,10 +141,10 @@ function Services() {
             Cass&York drives innovation by providing cutting-edge product solutions. Partner with us to bring your disruptive ideas to life and accelerate your growth with custom web & cloud applications
             </ListItem>
             <ListItem title="E-commmerce, Elevated">
-              We can can help build a robust API for your application. Whether it's a custom API or you need to integrate with a third party API.
+              We can can help build a robust API for your store. Whether it's a custom API or you need to integrate with a third party API.
             </ListItem>
             <ListItem title="Legacy Systems, Reimagined">
-              We are at the forefront of modern e-commerce development. We help online retailers drive sales and engage customers through seamless digital experiences
+              Bring your old systems into the modern age. We can help you migrate your old ecommerce store to Shopify as a custom solution.
             </ListItem>
          
          
