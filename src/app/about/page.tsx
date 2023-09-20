@@ -211,7 +211,7 @@ We believe in staying ahead of the curve. Our team of developers, designers, and
 
       <Culture />
 
-      <Team />
+      {/* <Team /> */}
 
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
