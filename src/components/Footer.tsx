@@ -20,12 +20,12 @@ const navigation = [
   {
     title: 'Services',
     links: [
-      { title: 'Product Development', href: '/services/product-development' },
-      { title: 'Mobile Development', href: '/services/mobile-development' },
-      { title: 'Web Development', href: '/services/web-development' },
+      { title: 'Shopify App Development', href: '/services/product-development' },
+      { title: 'E-commerce Store Development', href: '/services/web-development' },
       { title: 'Conversion Rate Optimization', href: '/services/cro' },
+      { title: 'Page Speed Optimization', href: '/services/speed-optimization' },
+      { title: 'Custom E-commerce Integrations', href: '/services/integrations' },
       { title: 'Automation', href: '/services/automation' },
-      { title: 'Staffing/OnSite', href: '/services/staffing' },
     ],
   },
 
@@ -33,18 +33,18 @@ const navigation = [
   {
     title: 'Industries',
     links: [
-      { title: 'eCommerce & Retail', href: '/about' },
-      { title: 'Logistics & Transportation', href: '/process' },
-      { title: 'Commercial Roofing', href: '/blog' },
-      { title: 'Commercial Construction', href: '/contact' },
+      { title: 'E-Commerce & Retail', href: '/about' },
+      { title: 'DTC E-commerce', href: '/process' },
+      { title: 'B2B E-commerce', href: '/blog' },
+      { title: 'Subscription Based', href: '/contact' },
     ],
   },
   {
     title: 'Freebies',
     links: [
-      { title: 'Tune Up', href: '/freebies/cro' },
-      { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
+      { title: 'Free One Page Tune Up', href: '/freebies/cro' },
+      { title: 'Free Full SEO Audit', href: '/freebies/audit' },
+      { title: 'Free Product Page Teardown', href: '/freebies/teardown' },
       {
         title: (
           <>

@@ -11,8 +11,6 @@ export default async function MoreArticles({categoryList} : {categoryList: strin
             className="mt-24 sm:mt-32 lg:mt-40"
             title="More articles"
             pages={relatedPosts}
-            
-            
           />
         )}
     </div>

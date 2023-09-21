@@ -16,7 +16,7 @@ import { Values } from '../layout'
 export default function page() {
   return (
     <>
-      <PageIntro eyebrow="Product Development" title="Product is a journey of collaboration, innovation, and results">
+      <PageIntro eyebrow="Website and Web App Development" title="Product is a journey of collaboration, innovation, and results">
         <p>
           At Cass&York, we know the digital landscape like the back of our hand. We also understand that every business journey is as unique as a fingerprint. Whether you're a fledgling start-up or an industry leader, we offer versatile product help and development services designed to bring your digital aspirations to life.
         </p>

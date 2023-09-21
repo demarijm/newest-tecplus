@@ -10,6 +10,7 @@ import { PageIntro } from '@/components/PageIntro'
 import { SocialMedia } from '@/components/SocialMedia'
 import { slack } from '@/lib/slack'
 import { redirect } from 'next/dist/server/api-utils'
+import { leadSubmitted } from '../actions/leads'
 
 function TextInput({ label, ...props }) {
   let id = useId()
@@ -47,50 +48,6 @@ function RadioInput({ label, ...props }) {
 }
 
 
-export async function leadSubmitted(formData) {
-  'use server'
-  const budget = formData.get('budget')
-  const companyName = formData.get('company')
-  const message = formData.get('message')
-  const email = formData.get('email')
-  const phone = formData.get('phone')
-
-  const channel = "cro-lead-magnet"
-
-  
-
-  try {
-    // Call the chat.postMessage method using the built-in WebClient
-    const result = await slack.chat.postMessage({
-      // The token you used to initialize your app
-      token: process.env.SLACK_AUTH_TOKEN,
-      channel: channel,
-      blocks: [
-        {
-          "type": "section",
-          "text": {
-            "type": "mrkdwn",
-            "text": `New Lead from ${channel},
-            \n\n *Requested Page:* contact page
-            \n\n *Company Name:* ${companyName}
-            \n\n *Email:* ${email}
-            \n\n *Phone:* ${phone}
-            \n\n *Budget:* ${budget}
-            \n\n *Message:* ${message}
-            `
-          }
-        }
-
-      ]
-    });
-    console.log(result);
-  }
-  catch (error) {
-    console.error(error);
-  }
-
-
-}
 
 function ContactForm() {
   return (
@@ -142,8 +99,7 @@ function ContactDetails() {
         Our offices
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We don’t but we have to list our
-        addresses here for legal reasons.
+        Prefer doing things in person?
       </p>
 
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
