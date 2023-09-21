@@ -9,6 +9,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { sanity } from '@/lib/sanity'
 import { getPosts } from '../server/posts.server'
+import { PortableText } from '@portabletext/react'
 
 export const metadata = {
   title: 'Blog',
@@ -34,7 +35,7 @@ export default async function Blog() {
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="space-y-24 lg:space-y-32">
           {articles.map((article) => (
-            <FadeIn key={article.href}>
+            <FadeIn key={article.slug.current}>
               <article>
 
                 <Border className="pt-16">
@@ -63,17 +64,16 @@ export default async function Blog() {
                           </div>
                           <div className="text-sm text-neutral-950">
                             <div className="font-semibold">
-                              {article.author.name}
+                              {article.authorName}
                             </div>
-                            <div>{article.author.role}</div>
                           </div>
                         </dd>
                       </dl>
                       <p className="mt-6 line-clamp-2 max-w-2xl text-base text-neutral-600">
-                        {article.description}
+                        <PortableText value={article.body}  />
                       </p>
                       <Button
-                        href={article.href}
+                        href={article.slug.current}
                         aria-label={`Read more: ${article.title}`}
                         className="mt-8"
                       >
