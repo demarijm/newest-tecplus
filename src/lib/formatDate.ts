@@ -2,7 +2,7 @@ export function formatDate(dateString: string): string {
   const isoDate = new Date(dateString);
 
   if (isNaN(isoDate.getTime())) {
-    throw new Error("Invalid date string");
+    console.log("Invalid date string")
   }
 
   const options: Intl.DateTimeFormatOptions = {

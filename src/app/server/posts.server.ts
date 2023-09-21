@@ -35,12 +35,13 @@ export async function getRelatedPosts(categoryList: string[]): Promise<Post[]> {
     
     
     const posts = await sanity.fetch(
-      `*[_type == "post" && count((categories[]->title)[@ in [${categoryList.map((c) => `${c}`)}]]) > 0] {
+      `*[_type == "post" && count((categories[]->title)[@ in ["${categoryList.join(',')}"]]) > 0] {
         ...,
         'authorName': author->name,
         'mainImageUrl': mainImage.asset->url,
         'categoryList': categories[]->title,
       }`)
+      console.log(posts)
     return posts
   }
   catch (e) {

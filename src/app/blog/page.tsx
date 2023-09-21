@@ -10,6 +10,7 @@ import { PageIntro } from '@/components/PageIntro'
 import { sanity } from '@/lib/sanity'
 import { getPosts } from '../server/posts.server'
 import { PortableText } from '@portabletext/react'
+import { formatDate } from '@/lib/formatDate'
 
 export const metadata = {
   title: 'Blog',
@@ -48,7 +49,7 @@ export default async function Blog() {
                         <dt className="sr-only">Published</dt>
                         <dd className="absolute left-0 top-0 text-sm text-neutral-950 lg:static">
                           <time dateTime={article.publishedAt}>
-                            {article.publishedAt}
+                            {formatDate(article.publishedAt)}
                           </time>
                         </dd>
                         <dt className="sr-only">Author</dt>
@@ -62,12 +63,12 @@ export default async function Blog() {
                               className="h-48 w-72 object-cover grayscale"
                             />
                           </div>
-                          <div className="text-sm text-neutral-950">
+                        </dd>
+                          <div className="text-sm text-neutral-950 mt-6">
                             <div className="font-semibold">
                               {article.authorName}
                             </div>
                           </div>
-                        </dd>
                       </dl>
                       <p className="mt-6 line-clamp-2 max-w-2xl text-base text-neutral-600">
                         <PortableText value={article.body}  />

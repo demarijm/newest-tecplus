@@ -1,4 +1,3 @@
-// @ts-nocheck
 import Link from 'next/link'
 import clsx from 'clsx'
 
@@ -8,6 +7,8 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { GridPattern } from '@/components/GridPattern'
 import { SectionIntro } from '@/components/SectionIntro'
 import { formatDate } from '@/lib/formatDate'
+import { Post } from '@/types/post.types'
+import { PortableText } from '@portabletext/react'
 
 function ArrowIcon(props) {
   return (
@@ -21,9 +22,11 @@ function ArrowIcon(props) {
   )
 }
 
-function PageLink({ page }) {
+function PageLink({ page }: {
+  page: Post
+}) {
   return (
-    <article key={page.href}>
+    <article key={page.slug.current}>
       <Border
         position="left"
         className="relative flex flex-col items-start pl-8"
@@ -32,14 +35,16 @@ function PageLink({ page }) {
           {page.title}
         </h3>
         <time
-          dateTime={page.date}
+          dateTime={page._updatedAt}
           className="order-first text-sm text-neutral-600"
         >
-          {formatDate(page.date)}
+          {formatDate(page._updatedAt)}
         </time>
-        <p className="mt-2.5 text-base text-neutral-600">{page.description}</p>
+        <p className="mt-2.5 truncate  text-base text-neutral-600">
+          {/* <PortableText value={page.authorName}  /> */}
+        </p>
         <Link
-          href={page.href}
+          href={page.slug.current}
           className="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
           aria-label={`Read more: ${page.title}`}
         >
@@ -52,24 +57,28 @@ function PageLink({ page }) {
   )
 }
 
-export function PageLinks({ title, intro, pages, className }) {
+export function PageLinks({ title, intro, pages, className }: {
+  title: string
+  intro?: string
+  pages: Post[]
+  className?: string
+}) {
   return (
-    <div className={clsx('relative pt-24 sm:pt-32 lg:pt-40', className)}>
+    <div className={clsx('relative  pt-12', className)}>
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
         <GridPattern
           className="absolute inset-0 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
           yOffset={-270}
         />
       </div>
-
-      <SectionIntro title={title} smaller>
+      <SectionIntro eyebrow title={title} smaller>
         {intro && <p>{intro}</p>}
       </SectionIntro>
 
       <Container className={intro ? 'mt-24' : 'mt-16'}>
         <FadeInStagger className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
           {pages.map((page) => (
-            <FadeIn key={page.href}>
+            <FadeIn key={page.slug.current}>
               <PageLink page={page} />
             </FadeIn>
           ))}

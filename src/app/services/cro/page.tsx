@@ -12,6 +12,7 @@ import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
 import { ContactSection } from '@/components/ContactSection'
 import { Values } from '../layout'
+import Image from 'next/image'
 
 
 // Is Your Website Hitting the Right Notes? 🎵
@@ -287,7 +288,8 @@ function CTA() {
                 </p>
               </blockquote>
               <figcaption className="mt-10 flex gap-x-6">
-                <img
+                <Image
+                  width={100} height={100}
                   src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=96&h=96&q=80"
                   alt=""
                   className="h-12 w-12 flex-none rounded-full bg-gray-50"
