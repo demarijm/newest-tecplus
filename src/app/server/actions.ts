@@ -24,7 +24,7 @@ export async function handleNewsletter(formData) {
     // Prepare the headers
     const headers = {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${process.env.SENDFOX_API_KEY}`, // Replace with your token
+      'Authorization': `Bearer ${process.env.SENDFOX_API_KEY}`,
     };
   
     // Make the POST request

@@ -60,7 +60,6 @@ const navigation = [
     links: [
       { title: 'sales@cassyork.com', href: 'mailto:sales@cassyork.com' },
       { title: 'support@cassyork.com', href: 'mailto:support@cassyork.com' },
-      { title: '+1 (313) 403-8703', href: 'tel"13134038703' },
     ],
   },
   
