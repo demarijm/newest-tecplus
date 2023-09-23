@@ -20,11 +20,11 @@ const navigation = [
   {
     title: 'Services',
     links: [
-      { title: 'Shopify App Development', href: '/services/product-development' },
+      { title: 'Shopify App Development', href: '/services/shopify-app-development' },
       { title: 'E-commerce Store Development', href: '/services/web-development' },
       { title: 'Conversion Rate Optimization', href: '/services/cro' },
-      { title: 'Page Speed Optimization', href: '/services/speed-optimization' },
-      { title: 'Custom E-commerce Integrations', href: '/services/integrations' },
+      { title: 'Page Speed Optimization', href: '/services/site-speed-optimization' },
+      { title: 'Custom E-commerce Integrations', href: '/services/ecommerce-integrations' },
       { title: 'Automation', href: '/services/automation' },
     ],
   },
@@ -143,7 +143,7 @@ function NewsletterForm() {
 
 export function Footer() {
   return (
-    <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
+    <footer className="mt-24 w-full sm:mt-32 lg:mt-40">
       <FadeIn>
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
           <div className='col-span-3'>
@@ -163,6 +163,6 @@ export function Footer() {
           </p>
         </div>
       </FadeIn>
-    </Container>
+    </footer>
   )
 }

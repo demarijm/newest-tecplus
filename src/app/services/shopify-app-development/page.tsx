@@ -16,11 +16,18 @@ import { Values } from '../layout'
 export default function page() {
   return (
     <>
-      <PageIntro eyebrow="Product Development" title="Product is a journey of collaboration, innovation, and results">
+      <PageIntro eyebrow="Shopify App Development" title="Product is a journey of collaboration, innovation, and results">
         <p>
-          At Cass&York, we know the digital landscape like the back of our hand. We also understand that every business journey is as unique as a fingerprint. Whether you're a fledgling start-up or an industry leader, we offer versatile product help and development services designed to bring your digital aspirations to life.
+          Developing a shopify app is a complex, but when you add industry-specific requirements, it becomes even more challenging. That's where we come in.
+          <br />
+          <br />
+          Our agency specializes in full-service Shopify app development services. Whether you're looking to take your <Link href="">app public</Link> or use it to make your business <Link href="">run more efficiently</Link>, our experienced Shopify app developers are here to guide you through every step of the journey.
+          <br />
+          <br />
+          We've assembled a team of some of the most experienced Shopify app developers to ensure that you build the best product possible. <Link href="">Get in touch</Link> to learn more about how we can bring your vision to life.
         </p>
       </PageIntro>
+
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Discover />
         <Build />
@@ -29,7 +36,7 @@ export default function page() {
 
       <Values />
 
-<ContactSection call="Ready to start? Click below"/>
+      <ContactSection call="Ready to start? Click below" />
     </>
 
   )
@@ -37,28 +44,26 @@ export default function page() {
 
 function Discover() {
   return (
-    <Section title="The Nuts and Bolts of Product Development" image={{ src: imageWhiteboard }}>
+    <Section title="Shopify app development services" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-
           Our team of industry-leading developers, designers, and strategists are eager to transform your concept into a robust digital product. We blend our technical know-how with a deep understanding of your business requirements to create solutions that work as hard as you do.
         </p>
         <p>
           From bespoke software solutions to interactive mobile applications and high-performance e-commerce platforms, we create products that pack a punch. What's more, we ensure that these solutions not only meet your unique specifications but also deliver an engaging, user-friendly experience to your audience.
         </p>
-
       </div>
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Included in this phase
+        Our range of services
       </h3>
       <TagList className="mt-4">
-        <TagListItem>In-depth questionnaires</TagListItem>
-        <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Current System evaluation</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
-        <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Competitor Analysis</TagListItem>
+        <TagListItem>App store consulting</TagListItem>
+        <TagListItem>API Integrations</TagListItem>
+        <TagListItem>Shopify app development</TagListItem>
+        <TagListItem>Integration with existing product or API</TagListItem>
+        <TagListItem>Proof of concept</TagListItem>
+        <TagListItem>Competitor analysis</TagListItem>
       </TagList>
     </Section>
   )

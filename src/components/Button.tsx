@@ -25,7 +25,7 @@ export function Button({ invert, href, className, children, ...props }: {
     )
   }
 
-  return (
+  return ( 
     <button className={className} {...props}>
       {inner}
     </button>
