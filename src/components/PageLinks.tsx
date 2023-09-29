@@ -26,7 +26,7 @@ function PageLink({ page }: {
   page: Post
 }) {
   return (
-    <article key={page.slug.current}>
+    <article key={page?.slug?.current || "#"}>
       <Border
         position="left"
         className="relative flex flex-col items-start pl-8"
@@ -44,7 +44,7 @@ function PageLink({ page }: {
           {/* <PortableText value={page.authorName}  /> */}
         </p>
         <Link
-          href={page.slug.current}
+          href={page?.slug?.current || "#"}
           className="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
           aria-label={`Read more: ${page.title}`}
         >
@@ -78,7 +78,7 @@ export function PageLinks({ title, intro, pages, className }: {
       <Container className={intro ? 'mt-24' : 'mt-16'}>
         <FadeInStagger className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
           {pages.map((page) => (
-            <FadeIn key={page.slug.current}>
+            <FadeIn key={page?.slug?.current || "#"}>
               <PageLink page={page} />
             </FadeIn>
           ))}
