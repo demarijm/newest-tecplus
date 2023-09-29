@@ -9,6 +9,7 @@ import { PageLinks } from '@/components/PageLinks'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
 export default async function CaseStudyLayout({ children, _segments }) {
+  
   let id = _segments.at(-2)
   let allCaseStudies = await loadMDXMetadata('work')
   let caseStudy = allCaseStudies.find((caseStudy) => caseStudy.id === id)
