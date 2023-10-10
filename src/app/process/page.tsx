@@ -198,7 +198,7 @@ export const metadata = {
 export default function Process() {
   return (
     <>
-      <PageIntro eyebrow="Transforming Visions into Reality, One Step at a Time" title="Our process is a journey of collaboration, innovation, and results">
+      <PageIntro eyebrow="Our Approach" title="Our process is a journey of collaboration, innovation, and results">
         <p>
           Every successful project at Cass&York is rooted in our methodical and collaborative process. While we tailor our approach to each client's unique needs, our process generally encompasses the following stages:
         </p>
