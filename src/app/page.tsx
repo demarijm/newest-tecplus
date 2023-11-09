@@ -167,11 +167,11 @@ export default async function Home() {
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">Drive more from your Ecommerce store</h1>
-          <p className="mt-6 text-xl text-neutral-600">We help merchants dominate their competition through customer journy optimzations for B2B and B2C stores. 
+          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">We Help Your Business Grow Organically</h1>
+          <p className="mt-6 text-xl text-neutral-600">We help venture funded B2B Saas dominate break into their industry by helping them build and grow faster, and grow faster
           </p>
           <Button className='mt-6' href="/free">
-            Request my free conversion review
+            Request my product review
           </Button>
         </FadeIn>
       </Container>

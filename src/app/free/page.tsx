@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { Blockquote } from '@/components/Blockquote'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
@@ -7,70 +6,6 @@ import { TagList, TagListItem } from '@/components/TagList'
 import React from 'react'
 
 
-// Is Your Website Hitting the Right Notes? 🎵
-// Introducing Web Tune-Up: Our expert touch for your site's redesign and thorough analysis. See instant results and higher conversions in just 3 days!
-// ✅ Streamlined Design
-// ✅ Insightful Analysis
-// ✅ Maximized Performance
-
-// Get your website in harmony with your business goals.
-// [Start Your Web Tune-Up Now]
-
-export async function leadSubmitted(formData) {
-  'use server'
-  const reqeustedPage = formData.get('requested-page')
-  const companyName = formData.get('company-name')
-  const message = formData.get('message')
-  const email = formData.get('email')
-
-  const responses = {
-    'requested-page': reqeustedPage,
-    'company-name': companyName,
-    'message': message,
-    'email': email
-  }
-  
-
-  console.log('message', message)
-  console.log('requested-page', reqeustedPage)
-  console.log('company-name', companyName)
-  console.log('email', email)
-
-  const channel = "cro-lead-magnet"
-
-  try {
-    // Call the chat.postMessage method using the built-in WebClient
-    const result = await slack.chat.postMessage({
-      // The token you used to initialize your app
-      token: process.env.SLACK_AUTH_TOKEN,
-      channel: channel,
-      blocks: [
-        {
-          "type": "section",
-          "text": {
-            "type": "mrkdwn",
-            "text": `New Lead from ${channel},
-            \n\n *Requested Page:* ${reqeustedPage}
-            \n\n *Company Name:* ${companyName}
-            \n\n *Email:* ${email}
-            \n\n *Message:* ${message}
-            `
-          }
-        }
-
-      ]
-      // You could also use a blocks[] array to send richer content
-    });
-
-    // Print result, which includes information about the message (like TS)
-    console.log(result);
-  }
-  catch (error) {
-    console.error(error);
-  }
-
-
-}
 
 export default function page() {
   return (
@@ -125,6 +60,7 @@ function Section({ title, image, children }) {
 
 
 function CTA() {
+
   return (
     <div className="relative isolate   ">
   
@@ -193,12 +129,7 @@ function CTA() {
               </div>
             </div>
             <div className="mt-10">
-              <button
-                type="submit"
-                className="block w-full rounded-md bg-[#1338BF] px-3.5 py-2.5 text-center text-lgfont-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Get My Free Tune Up
-              </button>
+             <SubmitButton />
             </div>
             <p className="mt-4 text-center text-lgleading-6 text-gray-500">
             No Credit Card Required • 100% Risk Free
@@ -224,6 +155,8 @@ function CTA() {
 
 import clsx from 'clsx'
 import { slack } from '@/lib/slack'
+import { leadSubmitted } from '../actions/leads'
+import SubmitButton from './SubmitButton'
 
 
 function PageIntro({ eyebrow, title, children, centered = false }) {
